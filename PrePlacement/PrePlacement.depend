@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\admin\documents\c\preplacement\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1717735189 source:c:\users\admin\documents\c\preplacement\precision.c
+	<stdio.h>
+	<math.h>
+
