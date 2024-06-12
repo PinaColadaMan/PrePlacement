@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1718101514 source:c:\users\admin\documents\c\vowelcount\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
