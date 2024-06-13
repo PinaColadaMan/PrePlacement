@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1718173192 source:c:\users\admin\documents\c\armstrong number\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
