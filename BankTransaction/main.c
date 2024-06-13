@@ -74,7 +74,6 @@ CashWit(){
 };
 int main()
 {
-    printf("Choose:\n");
     int choice;
     do
     {
