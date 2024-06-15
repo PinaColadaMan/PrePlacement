@@ -1,39 +1,29 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-int main()
+#include<string.h>
+#include<stdio.h>
+void main()
 {
-    char string1[100],string2[100];
-    printf("Enter String 1:\n");
-    scanf("%s",string1);
-    int len1=strlen(string1);
-    printf("Enter String 1:\n");
-    scanf("%s",string2);
-    int len2=strlen(string2);
-    for(int i=0;i<len1+len2;i++)
+char name1[20];
+char name2[20];
+gets(name1);
+gets(name2);
+int l1=strlen(name1);
+int l2=strlen(name2);
+int a,count=0;
+int length=l1+l2;
+for(int i=0;i<l1;i++)
+{
+   for(int j=0;j<l2;j++)
     {
-        for(int j=0;j<len1+len2;j++)
+        if(name1[i]== name2[i])
         {
-            if(string1[i]==string2[j])
-            {   int k=i;
-                do
-                {
-                    string1[k]=string1[k+1];
-                    ++k;
-                }while(string1[k]!='\0');
-                k=i;
-                do
-                {
-                    string2[k]=string2[k+1];
-                    ++k;
-                }while(string2[k]!='\0');
-            }
+            name1[i]='+';
+            name2[i]='+';
+             count+=2;
+             break;
         }
     }
-    printf("String 1:%s",string1);
-    printf("String 2:%s",string2);
-    return 0;
-}/*steps:
-    1.remove common characters
-    2.concatenate
-    3. modulus of n
+}
+a=(length-count)%6;
+char flames[]={'f','l','a','m','e','s'};
+printf("%c",flames[a]);
+}
