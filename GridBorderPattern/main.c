@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#define MIN(a,b)
+#define MIN(a,b) (a)<(b)?(a):(b)
 int main()
 {
     int num, limit;
